@@ -1,0 +1,26 @@
+.part1 {
+	height: 500px;
+}
+
+.part2{
+	margin: 0px;
+	background-color: rgba(0, 223, 255, 0.6);
+}
+.part2_1{
+	margin-left: 88.5px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 0px;
+	width=470px;
+	height=400px;
+}
+.part2_2{
+	padding: 50px;
+	background-color: white;
+	margin-right: 88.5px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 0px;
+	width=470px;
+	height=400px;
+}
