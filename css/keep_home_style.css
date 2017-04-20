@@ -10,9 +10,6 @@
 	margin: 0px;
 }
 
-.part2{
-	margin: 0px;
-}
 .part2_1{
 	margin-left: 88.5px;
 	margin-top: 100px;
@@ -34,4 +31,13 @@
 .part3{
 	margin: 20px;
 	padding: 20px;
+}
+.part4{
+	margin: 20px;
+	padding: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+a{
+	color: black;
 }
