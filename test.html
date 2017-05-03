@@ -8,37 +8,70 @@
 	<link rel="stylesheet" href="css/test_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="myScript.js"></script>
 </head>
 <body>
-	<div class="row title">
-	<div class="text-center">
-	  <h1>My First Bootstrap Page</h1>
-	  <h4>This is some text.</h4> 
+	<div class="title">
+		<div class="text-center">
+		    <h1>My First Bootstrap Page</h1>
+			<button>Get My Inforemation</button>
+		</div>
 	</div>
+	<img id="div1">
+	<div>
+		<div class="mySlides fade">
+		  <img src="image-slider-1.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+		  <img src="image-slider-2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+		  <img src="image-slider-3.jpg" style="width:100%">
+		</div>
 	</div>
+
 	<div class="container">
-	<div class="row">
-		<div class="col-md-4">
-		<h3>Column1</h3>
-		<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
-		<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
+		<div class="row">
+			<div class="col-md-4">
+			<h3>Column1</h3>
+			<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
+			<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
 
-		</div>	
-		<div class="col-md-4">
-		<h3>Column2</h3>
-		<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
+			</div>	
+			<div class="col-md-4">
+			<h3>Column2</h3>
+			<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
 
-		<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
+			<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
 
-		</div>
-		<div class="col-md-4">
-		<h3>Column3</h3>
-		<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Column3</h3>
+			<p>Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his.</p>
 
-		<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
+			<p>In alteration insipidity impression by travelling reasonable up motionless. Of regard warmth by unable sudden garden ladies. No kept hung am size spot no. Likewise led and dissuade rejoiced welcomed husbands boy. Do listening on he suspected resembled. Water would still if to. Position boy required law moderate was may.</p>
 
+			</div>
 		</div>
 	</div>
-	</div>
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = $(".mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+	slides[slideIndex-1].style.display = "block";    
+    //slides[slideIndex-1].animate({left: '0px'}, "slow");  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
 </body>
 </html>
